@@ -8,9 +8,11 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: #e9f0ee; font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif; padding: 16px 12px; }
         .form-container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 24px; box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08); overflow: hidden; }
-        .doc-header { background: #004d40; padding: 18px 20px; color: white; text-align: center; }
-        .doc-header h1 { font-size: 1.3rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 5px; }
-        .doc-header .sub { font-size: 0.75rem; opacity: 0.85; line-height: 1.4; }
+        .doc-header { background: #004d40; padding: 20px 24px; color: white; text-align: left; }
+	.doc-header .title-main { font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
+	.doc-header .title-sub { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+	.doc-header .contract-line { font-size: 0.8rem; opacity: 0.9; margin-bottom: 4px; }
+	.doc-header .version-line { font-size: 0.8rem; opacity: 0.85; }
         .meta-bar { background: #f9fcfb; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid #d4e2de; align-items: center; justify-content: space-between; }
         .meta-item { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; background: white; padding: 5px 12px; border-radius: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
         .meta-item label { font-weight: 700; color: #00695c; font-size: 0.75rem; }
@@ -62,9 +64,11 @@
 <body>
 <div class="form-container">
     <div class="doc-header">
-        <h1>NORTH LANTAU TRANSFER STATION<br>DAILY INSPECTION RECORD</h1>
-        <div class="sub">Contract No. EP/SP/221/22 | DOIF-NLRTS-002 | ver. Apr 2026</div>
-    </div>
+    <div class="title-main">DAILY INSPECTION FORM</div>
+    <div class="title-sub">NORTH LANTAU TRANSFER STATION</div>
+    <div class="contract-line">Contract No. EP/SP/221/22</div>
+    <div class="version-line">DOIF-NLRTS-002 ver. Apr 2026</div>
+</div>
 
     <div class="meta-bar">
         <div class="meta-item"><label>📅 DATE <span class="required-star">*</span></label><input type="date" id="inspectDate"></div>
